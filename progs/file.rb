@@ -1,18 +1,18 @@
 def file_write
-	fp = fopen("text", "w")
-	if fp == 0; return 1; end
+  fp = fopen("text", "w")
+  if fp == 0; return 1; end
 
-	fprintf(fp, "I love to do my homework.")
+  fprintf(fp, "I love to do my homework.")
 
-	fclose(fp)
+  fclose(fp)
 end
 
 def file_read(text:string, max)
-	fp = fopen("text", "r")
-	if fp == 0; return 1; end
+  fp = fopen("text", "r")
+  if fp == 0; return 1; end
 
-	fgets(text, max, fp)
-	fclose(fp)
+  fgets(text, max, fp)
+  fclose(fp)
 end
 
 text:string = Array(100)
